@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">COFFEELAB SURVEY FORM </h1>
+  <p id="description">This is a survey form. Thank you for your time! </p>
+
+  <div class="survey-container">
+    <!-- form section -->
+    <div class="row">
+      <form id="survey-form">
+        <div class="column">
+          <label for="name" id="name-label">Name: </label>
+          <input type="text" id="name" placeholder="enter your name..." required>
+          <label for="email" id="email-label">E-mail: </label>
+          <input type="email" id="email" required placeholder="enter your email...">
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" placeholder="Age.." min="9" max="99">
+          <label for="coffee">Select your favorit coffee</label>
+
+          <select id="dropdown" name="coffee">
+            <option value="Americano">Americano</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Moka">Moka</option>
+            <option value="Irish Coffee">Irish Coffee</option>
+          </select>
+          <div class="options">
+            <p>Please select your gender: </p>
+            <input type="radio" id="male" name="gender" value="male" class="radio">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" class="radio">
+            <label for="female">Female</label><br>
+
+            <p> What is the most important aspect(s) of your coffee?</p>
+            <input type="checkbox" id="price" value="price" class="checkbox">
+            <label for="price">Price</label><br>
+            <input type="checkbox" id="taste" value="taste" class="checkbox">
+            <label for="taste">Taste</label><br>
+
+          </div>
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </div>
+  <!-- </div> -->
+
+</body>
+
+</html>
